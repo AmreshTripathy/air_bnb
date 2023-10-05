@@ -109,7 +109,7 @@ function makeListingCards() {
                 localStorage.removeItem('roomId');
             }
             localStorage.setItem('roomId', JSON.stringify({ 'id': result.id, 'price': result.price, 'result': { result } }));
-            window.open("/rooms.html", "_self");
+            window.location.href = 'rooms.html';
         }
 
         cardContainer.appendChild(card);
