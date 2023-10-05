@@ -86,9 +86,9 @@ async function fetchData(loc, checkIn, checkOut, guest) {
         var data = JSON.parse(result);
         if (data.message) {
             alert(data.message);
-            window.open("/index.html", "_self");
+            window.location.href = 'index.html';
         } else {
-            window.open("/search.html", "_self");
+            window.location.href = 'search.html';
         } 
     } catch (error) {
         console.error(error);
